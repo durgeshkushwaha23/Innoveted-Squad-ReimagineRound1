@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Retro Funk - Get Groovy</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body class="bg-yellow-400">
@@ -22,7 +23,7 @@
             </ul>
         </nav>
     </header>
-
+    <!-- 
     <section class="container mx-auto text-center my-10">
         <h1 class="text-6xl font-bold mb-4">RETRO FUNK</h1>
         <p class="text-2xl mb-6">GET GROOVY</p>
@@ -46,42 +47,137 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+    <div class="swiper h-screen w-full  mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./header img1.webp" alt=""></div>
+            <div class="swiper-slide"><img src="./header img2.webp" alt=""></div>
+            <div class="swiper-slide"><img src="./header img3.webp" alt=""></div>
 
-    <div class="container mx-auto py-8">
-        <h1 class="text-center text-3xl font-bold mb-8">Select Your Brand</h1>
-        <div class="flex justify-center space-x-4 mb-16">
-            <img src="https://via.placeholder.com/100" alt="Apple" class="rounded-full bg-white p-4">
-            <img src="https://via.placeholder.com/100" alt="Samsung" class="rounded-full bg-white p-4">
-            <img src="https://via.placeholder.com/100" alt="OnePlus" class="rounded-full bg-white p-4">
-            <img src="https://via.placeholder.com/100" alt="Google" class="rounded-full bg-white p-4">
-            <img src="https://via.placeholder.com/100" alt="Tecno" class="rounded-full bg-white p-4">
-            <img src="https://via.placeholder.com/100" alt="realme" class="rounded-full bg-white p-4">
-            <img src="https://via.placeholder.com/100" alt="Xiaomi" class="rounded-full bg-white p-4">
-            <img src="https://via.placeholder.com/100" alt="Oppo" class="rounded-full bg-white p-4">
-            <img src="https://via.placeholder.com/100" alt="Asus" class="rounded-full bg-white p-4">
         </div>
-        <h2 class="text-center text-3xl font-bold mb-8">Best Selling Mobile Skins</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div class="relative">
-                <img src="https://via.placeholder.com/200" alt="Skin 1" class="w-full">
-                <div class="absolute bottom-0 left-0 bg-black bg-opacity-50 p-2">LAYERS</div>
+        <!-- <div class="swiper-button-next bg-red-400"></div>
+        <div class="swiper-button-prev"></div> -->
+        <div class="swiper-pagination bg-slate-600 "></div>
+    </div>
+
+    <div class="container mx-auto py-8 bg-black">
+        <h1 class="text-center text-3xl font-bold mb-8">Select Your Brand</h1>
+        <div class=" second flex gap-7 justify-center items-center overflow-x-auto">
+            <img class="w-40 h-40 rounded-full" src="./syb1.webp" alt="">
+            <img class="w-40 h-40 rounded-full" src="./syb2.webp" alt="">
+            <img class="w-40 h-40 rounded-full" src="./syb3.webp" alt="">
+            <img class="w-40 h-40 rounded-full" src="./syb5.webp" alt="">
+            <img class="w-40 h-40 rounded-full" src="./syb6.webp" alt="">
+            <img class="w-40 h-40 rounded-full" src="./syb7.webp" alt="">
+            <img class="w-40 h-40 rounded-full" src="./syb8.webp" alt="">
+            <img class="w-40 h-40 rounded-full" src="./syb9.webp" alt="">
+            <img class="w-40 h-40 rounded-full" src="./syb10.webp" alt="">
+            <img class="w-40 h-40 rounded-full" src="./syb11.webp" alt="">
+            <img class="w-40 h-40 rounded-full" src="./sub4.webp" alt="">
+
+        </div>
+        <hr>
+        <h2 class="text-center text-3xl mt-8  font-mono mb-8">Best Selling Mobile Skins</h2>
+        <div  class="a min-h-screen w-full  bg-black flex gap-8 flex-wrap ">
+            <div class="b  w-72 ml-8 h-96  flex flex-col">
+                <div class=" c w-full flex-grow hover:opacity-75 relative " style="flex: 0 0 90%;">
+                    <img  src="./page2 1.webp" alt="">
+                    <div class="opacity-0  h-full w-full absolute flex justify-center items-center z-10 bottom-4 hover:opacity-100 ">
+                        <h4>selet your device</h4>
+                    </div>
+                </div>
+                <div class=" w-full flex-grow flex p-1 justify-between" style="flex: 0 0 10%;">
+                    <h4>judgement day</h4>
+                    <h5>$12</h5>
+                </div>
             </div>
-            <div class="relative">
-                <img src="https://via.placeholder.com/200" alt="Skin 2" class="w-full">
-                <div class="absolute top-0 left-0 bg-red-600 text-white p-1">New Metallic Finish</div>
-                <div class="absolute bottom-0 left-0 bg-black bg-opacity-50 p-2">LAYERS</div>
+            <div class="w-72 ml-8 h-96  flex flex-col">
+                <div class=" w-full flex-grow hover:opacity-75 relative " style="flex: 0 0 90%;">
+                    <img  src="./page2 8.webp" alt="">
+                    <div class="opacity-0  h-full w-full absolute flex justify-center items-center z-10 bottom-4 hover:opacity-100 ">
+                        <h4>selet your device</h4>
+                    </div>
+                </div>
+                <div class=" w-full flex-grow flex p-1 justify-between" style="flex: 0 0 10%;">
+                    <h4>dangerous idea</h4>
+                    <h5>$14</h5>
+                </div>
             </div>
-            <div class="relative">
-                <img src="https://via.placeholder.com/200" alt="Skin 3" class="w-full">
-                <div class="absolute bottom-0 left-0 bg-black bg-opacity-50 p-2">Select your device</div>
+            <div class="w-72 ml-8 h-96  flex flex-col">
+                <div class=" w-full flex-grow hover:opacity-75 relative " style="flex: 0 0 90%;">
+                    <img src="./page2 2.webp" alt="">
+                    <div class="opacity-0  h-full w-full absolute flex justify-center items-center z-10 bottom-4 hover:opacity-100 ">
+                        <h4>selet your device</h4>
+                    </div>
+                </div>
+                <div class=" w-full flex-grow flex p-1 justify-between" style="flex: 0 0 10%;">
+                    <h4>speceboy</h4>
+                    <h5>$12</h5>
+                </div>
             </div>
-            <div class="relative">
-                <img src="https://via.placeholder.com/200" alt="Skin 4" class="w-full">
-                <div class="absolute bottom-0 left-0 bg-black bg-opacity-50 p-2">LAYERS</div>
+            <div class="w-72 ml-8 h-96  flex flex-col">
+                <div class=" w-full flex-grow hover:opacity-75 relative " style="flex: 0 0 90%;">
+                    <img src="./page2 3.webp" alt="">
+                    <div class="opacity-0  h-full w-full absolute flex justify-center items-center z-10 bottom-4 hover:opacity-100 ">
+                        <h4>selet your device</h4>
+                    </div>
+                </div>
+                <div class=" w-full flex-grow flex p-1 justify-between" style="flex: 0 0 10%;">
+                    <h4>space buddy</h4>
+                    <h5>$12</h5>
+                </div>
+            </div>
+            <div class="w-72 ml-8 h-96  flex flex-col">
+                <div class=" w-full flex-grow hover:opacity-75 relative " style="flex: 0 0 90%;">
+                    <img src="./page2 4.webp" alt="">
+                    <div class="opacity-0  h-full w-full absolute flex justify-center items-center z-10 bottom-4 hover:opacity-100 ">
+                        <h4>selet your device</h4>
+                    </div>
+                </div>
+                <div class=" w-full flex-grow flex p-1 justify-between" style="flex: 0 0 10%;">
+                    <h4>concrete rank</h4>
+                    <h5>$12</h5>
+                </div>
+            </div>
+            <div class="w-72 ml-8 h-96  flex flex-col">
+                <div class=" w-full flex-grow hover:opacity-75 relative " style="flex: 0 0 90%;">
+                    <img src="./page2 5.webp" alt="">
+                    <div class="opacity-0  h-full w-full absolute flex justify-center items-center z-10 bottom-4 hover:opacity-100 ">
+                        <h4>selet your device</h4>
+                    </div>
+                </div>
+                <div class=" w-full flex-grow flex p-1 justify-between" style="flex: 0 0 10%;">
+                    <h4>chaso</h4>
+                    <h5>$12</h5>
+                </div>
+            </div>
+            <div class="w-72 ml-8 h-96  flex flex-col">
+                <div class=" w-full flex-grow hover:opacity-75 relative " style="flex: 0 0 90%;">
+                    <img src="./page2 6.webp" alt="">
+                    <div class="opacity-0  h-full w-full absolute flex justify-center items-center z-10 bottom-4 hover:opacity-100 ">
+                        <h4>selet your device</h4>
+                    </div>
+                </div>
+                <div class=" w-full flex-grow flex p-1 justify-between" style="flex: 0 0 10%;">
+                    <h4>before sunset</h4>
+                    <h5>$12</h5>
+                </div>
+            </div>
+            <div class="w-72 ml-8 h-96  flex flex-col">
+                <div class=" w-full flex-grow hover:opacity-75 relative " style="flex: 0 0 90%;">
+                    <img src="./page2 8.webp" alt="">
+                    <div class="opacity-0  h-full w-full absolute flex justify-center items-center z-10 bottom-4 hover:opacity-100 ">
+                        <h4>selet your device</h4>
+                    </div>
+                </div>
+                <div class=" w-full flex-grow flex p-1 justify-between" style="flex: 0 0 10%;">
+                    <h4>gamerboy</h4>
+                    <h5>$12</h5>
+                </div>
             </div>
         </div>
     </div>
+
     <div class="container mx-auto py-8">
         <div class="flex justify-between items-center py-12">
             <div class="text-center">
@@ -107,6 +203,10 @@
             </div>
         </div>
     </div>
+
+
+
+
     <img class="w-full h-screen"
         src="https://www.layers.shop/cdn/shop/files/Desktop_Banner_Futuristic_Design.png?v=1717589031&width=1080"
         alt="">
@@ -171,8 +271,9 @@
                     </div>
                 </div>
             </div>
-    </div>
-
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="script.js"></script>
 </body>
 
 </html>
