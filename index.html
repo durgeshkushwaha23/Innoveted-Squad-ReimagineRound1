@@ -2,278 +2,460 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retro Funk - Get Groovy</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Retro Funk - Get Groovy</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
-<body class="bg-yellow-400">
-    <header class="bg-black text-white">
-        <nav class="container mx-auto flex justify-between items-center p-4">
-            <div class="text-2xl font-bold">LAYERS</div>
-            <ul class="flex space-x-4">
-                <li><a href="#" class="hover:text-gray-400">Mobile Skins</a></li>
-                <li><a href="#" class="hover:text-gray-400">Laptops Skins</a></li>
-                <li><a href="#" class="hover:text-gray-400">Skin Collections</a></li>
-                <li><a href="#" class="hover:text-gray-400">Find Your Device</a></li>
-                <li><a href="#" class="hover:text-gray-400">How to Apply</a></li>
-                <li><a href="#" class="hover:text-gray-400">Login</a></li>
-            </ul>
-        </nav>
+<body class="bg-white">
+
+  <div class="main w-full bg-white">
+
+    <header>
+      <nav class="w-full h-24  bg-black">
+        <div class="logo h-2 w-32 ml-4 mb-7">
+          <img src="logo.webp" alt="" />
+        </div>
+        <div class="links flex gap-12  p-5 mt-5 font-medium mr-6">
+          <h1>Mobile skins</h1>
+          <h1>Laptop skins</h1>
+          <h1>Skin collections</h1>
+          <h1>Find your device</h1>
+          <h1>How to apply </h1>
+          <h1>Login</h1>
+        </div>
+      </nav>
     </header>
-    <!-- 
-    <section class="container mx-auto text-center my-10">
-        <h1 class="text-6xl font-bold mb-4">RETRO FUNK</h1>
-        <p class="text-2xl mb-6">GET GROOVY</p>
-        <div class="flex justify-center items-center">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-white p-4 rounded shadow">
-                    <img src="https://via.placeholder.com/200" alt="Skin 1" class="mb-4">
-                    <p class="font-bold">Skin 1</p>
-                </div>
-                <div class="bg-white p-4 rounded shadow">
-                    <img src="https://via.placeholder.com/200" alt="Skin 2" class="mb-4">
-                    <p class="font-bold">Skin 2</p>
-                </div>
-                <div class="bg-white p-4 rounded shadow">
-                    <img src="https://via.placeholder.com/200" alt="Skin 3" class="mb-4">
-                    <p class="font-bold">Skin 3</p>
-                </div>
-                <div class="bg-white p-4 rounded shadow">
-                    <img src="https://via.placeholder.com/200" alt="Skin 4" class="mb-4">
-                    <p class="font-bold">Skin 4</p>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <div class="swiper h-screen w-full  mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="./header img1.webp" alt=""></div>
-            <div class="swiper-slide"><img src="./header img2.webp" alt=""></div>
-            <div class="swiper-slide"><img src="./header img3.webp" alt=""></div>
 
+    <div class="carousel">
+      <div class="list">
+        <div class="item">
+          <img src="header img1.webp" alt="" />
         </div>
-        <!-- <div class="swiper-button-next bg-red-400"></div>
-        <div class="swiper-button-prev"></div> -->
-        <div class="swiper-pagination bg-slate-600 "></div>
+
+        <div class="item">
+          <img src="header img2.webp" alt="" />
+        </div>
+
+        <div class="item">
+          <img src="header img3.webp" alt="" />
+        </div>
+      </div>
+
+      <div class="thumbnail">
+        <div class="listThumbnail">
+          <div class="item">
+            <img src="header img1.webp" alt="" />
+            <div class="content">
+              <!-- <div class="title">Name Slider</div> -->
+              <!-- <div class="description">Description</div> -->
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="header img2.webp" alt="" />
+            <div class="content">
+              <!-- <div class="title">Name Slider</div> -->
+              <!-- <div class="description">Description</div> -->
+            </div>
+          </div>
+
+          <div class="  item">
+            <img src="header img3.webp" alt="" />
+            <div class="content">
+              <!-- <div class="title">Name Slider</div> -->
+              <!-- <div class="description">Description</div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class=" -z-10 arrows">
+        <button id="prev"></button>
+        <button id="next"></button>
+      </div>
+
+      <div class="time"></div>
     </div>
 
-    <div class="container mx-auto py-8 bg-black">
-        <h1 class="text-center text-3xl font-bold mb-8">Select Your Brand</h1>
-        <div class=" second flex gap-7 justify-center items-center overflow-x-auto">
-            <img class="w-40 h-40 rounded-full" src="./syb1.webp" alt="">
-            <img class="w-40 h-40 rounded-full" src="./syb2.webp" alt="">
-            <img class="w-40 h-40 rounded-full" src="./syb3.webp" alt="">
-            <img class="w-40 h-40 rounded-full" src="./syb5.webp" alt="">
-            <img class="w-40 h-40 rounded-full" src="./syb6.webp" alt="">
-            <img class="w-40 h-40 rounded-full" src="./syb7.webp" alt="">
-            <img class="w-40 h-40 rounded-full" src="./syb8.webp" alt="">
-            <img class="w-40 h-40 rounded-full" src="./syb9.webp" alt="">
-            <img class="w-40 h-40 rounded-full" src="./syb10.webp" alt="">
-            <img class="w-40 h-40 rounded-full" src="./syb11.webp" alt="">
-            <img class="w-40 h-40 rounded-full" src="./sub4.webp" alt="">
+    <div class="page2 bg-white">
+      <div class="slide w-full flex items-center justify-center flex-col">
+        <h1 class="sliderr text-center text-3xl text-black font-bold mt-7 mb-8">
+          Select Your Brand
+        </h1>
 
+        <div class="movingdiv">
+          <div class="move flex gap-7 justify-center items-center ovrflow-x-auto">
+            <img class="w-40 h-40 rounded-full" src="./syb1.webp" alt="" />
+            <img class="w-40 h-40 rounded-full" src="./syb2.webp" alt="" />
+            <img class="w-40 h-40 rounded-full" src="./syb3.webp" alt="" />
+            <img class="w-40 h-40 rounded-full" src="./syb5.webp" alt="" />
+            <img class="w-40 h-40 rounded-full" src="./syb6.webp" alt="" />
+            <img class="w-40 h-40 rounded-full" src="./syb7.webp" alt="" />
+            <img class="w-40 h-40 rounded-full" src="./syb8.webp" alt="" />
+            <img class="w-40 h-40 rounded-full" src="./syb9.webp" alt="" />
+            <img class="w-40 h-40 rounded-full" src="./syb10.webp" alt="" />
+            <img class="w-40 h-40 rounded-full" src="./syb11.webp" alt="" />
+            <img class="w-40 h-40 rounded-full" src="./sub4.webp" alt="" /><img class="w-40 h-40 rounded-full"
+              src="./syb1.webp" alt="" />
+            <img class="w-40 h-40 rounded-full" src="./syb2.webp" alt="" />
+            <img class="w-40 h-40 rounded-full" src="./syb3.webp" alt="" />
+            <img class="w-40 h-40 rounded-full" src="./syb5.webp" alt="" />
+            <img class="w-40 h-40 rounded-full" src="./syb6.webp" alt="" />
+            <img class="w-40 h-40 rounded-full" src="./syb7.webp" alt="" />
+            <img class="w-40 h-40 rounded-full" src="./syb8.webp" alt="" />
+            <img class="w-40 h-40 rounded-full" src="./syb9.webp" alt="" />
+            <img class="w-40 h-40 rounded-full" src="./syb10.webp" alt="" />
+            <img class="w-40 h-40 rounded-full" src="./syb11.webp" alt="" />
+            <img class="w-40 h-40 rounded-full" src="./sub4.webp" alt="" />
+          </div>
         </div>
-        <hr>
-        <h2 class="text-center text-3xl mt-8  font-mono mb-8">Best Selling Mobile Skins</h2>
-        <div  class="a min-h-screen w-full  bg-black flex gap-8 flex-wrap ">
-            <div class="b  w-72 ml-8 h-96  flex flex-col">
-                <div class=" c w-full flex-grow hover:opacity-75 relative " style="flex: 0 0 90%;">
-                    <img  src="./page2 1.webp" alt="">
-                    <div class="opacity-0  h-full w-full absolute flex justify-center items-center z-10 bottom-4 hover:opacity-100 ">
-                        <h4>selet your device</h4>
-                    </div>
-                </div>
-                <div class=" w-full flex-grow flex p-1 justify-between" style="flex: 0 0 10%;">
-                    <h4>judgement day</h4>
-                    <h5>$12</h5>
-                </div>
-            </div>
-            <div class="w-72 ml-8 h-96  flex flex-col">
-                <div class=" w-full flex-grow hover:opacity-75 relative " style="flex: 0 0 90%;">
-                    <img  src="./page2 8.webp" alt="">
-                    <div class="opacity-0  h-full w-full absolute flex justify-center items-center z-10 bottom-4 hover:opacity-100 ">
-                        <h4>selet your device</h4>
-                    </div>
-                </div>
-                <div class=" w-full flex-grow flex p-1 justify-between" style="flex: 0 0 10%;">
-                    <h4>dangerous idea</h4>
-                    <h5>$14</h5>
-                </div>
-            </div>
-            <div class="w-72 ml-8 h-96  flex flex-col">
-                <div class=" w-full flex-grow hover:opacity-75 relative " style="flex: 0 0 90%;">
-                    <img src="./page2 2.webp" alt="">
-                    <div class="opacity-0  h-full w-full absolute flex justify-center items-center z-10 bottom-4 hover:opacity-100 ">
-                        <h4>selet your device</h4>
-                    </div>
-                </div>
-                <div class=" w-full flex-grow flex p-1 justify-between" style="flex: 0 0 10%;">
-                    <h4>speceboy</h4>
-                    <h5>$12</h5>
-                </div>
-            </div>
-            <div class="w-72 ml-8 h-96  flex flex-col">
-                <div class=" w-full flex-grow hover:opacity-75 relative " style="flex: 0 0 90%;">
-                    <img src="./page2 3.webp" alt="">
-                    <div class="opacity-0  h-full w-full absolute flex justify-center items-center z-10 bottom-4 hover:opacity-100 ">
-                        <h4>selet your device</h4>
-                    </div>
-                </div>
-                <div class=" w-full flex-grow flex p-1 justify-between" style="flex: 0 0 10%;">
-                    <h4>space buddy</h4>
-                    <h5>$12</h5>
-                </div>
-            </div>
-            <div class="w-72 ml-8 h-96  flex flex-col">
-                <div class=" w-full flex-grow hover:opacity-75 relative " style="flex: 0 0 90%;">
-                    <img src="./page2 4.webp" alt="">
-                    <div class="opacity-0  h-full w-full absolute flex justify-center items-center z-10 bottom-4 hover:opacity-100 ">
-                        <h4>selet your device</h4>
-                    </div>
-                </div>
-                <div class=" w-full flex-grow flex p-1 justify-between" style="flex: 0 0 10%;">
-                    <h4>concrete rank</h4>
-                    <h5>$12</h5>
-                </div>
-            </div>
-            <div class="w-72 ml-8 h-96  flex flex-col">
-                <div class=" w-full flex-grow hover:opacity-75 relative " style="flex: 0 0 90%;">
-                    <img src="./page2 5.webp" alt="">
-                    <div class="opacity-0  h-full w-full absolute flex justify-center items-center z-10 bottom-4 hover:opacity-100 ">
-                        <h4>selet your device</h4>
-                    </div>
-                </div>
-                <div class=" w-full flex-grow flex p-1 justify-between" style="flex: 0 0 10%;">
-                    <h4>chaso</h4>
-                    <h5>$12</h5>
-                </div>
-            </div>
-            <div class="w-72 ml-8 h-96  flex flex-col">
-                <div class=" w-full flex-grow hover:opacity-75 relative " style="flex: 0 0 90%;">
-                    <img src="./page2 6.webp" alt="">
-                    <div class="opacity-0  h-full w-full absolute flex justify-center items-center z-10 bottom-4 hover:opacity-100 ">
-                        <h4>selet your device</h4>
-                    </div>
-                </div>
-                <div class=" w-full flex-grow flex p-1 justify-between" style="flex: 0 0 10%;">
-                    <h4>before sunset</h4>
-                    <h5>$12</h5>
-                </div>
-            </div>
-            <div class="w-72 ml-8 h-96  flex flex-col">
-                <div class=" w-full flex-grow hover:opacity-75 relative " style="flex: 0 0 90%;">
-                    <img src="./page2 8.webp" alt="">
-                    <div class="opacity-0  h-full w-full absolute flex justify-center items-center z-10 bottom-4 hover:opacity-100 ">
-                        <h4>selet your device</h4>
-                    </div>
-                </div>
-                <div class=" w-full flex-grow flex p-1 justify-between" style="flex: 0 0 10%;">
-                    <h4>gamerboy</h4>
-                    <h5>$12</h5>
-                </div>
-            </div>
-        </div>
-    </div>
+      </div>
+      <hr />
 
-    <div class="container mx-auto py-8">
-        <div class="flex justify-between items-center py-12">
-            <div class="text-center">
-                <div class="mb-4">
-                    <img src="https://via.placeholder.com/40" alt="Icon 1" class="mx-auto">
+      <div class="CardEvents opacity-0">
+        <h2 class="bsms text-center text-3xl mt-8 font-mono font-bold mb-8">
+          Best Selling Mobile Skins
+        </h2>
+
+        <div class="cardAni min-h-screen w-full flex gap-8 flex-wrap">
+          <div class="cardinner w-72 ml-8 h-96 flex flex-col">
+            <div class="carddd w-full flex-grow hover:opacity-75 relative" style="flex: 0 0 90%">
+              <img src="./page2 1.webp" alt="" />
+
+              <div
+                class="upper opacity-0 h-full w-full absolute flex justify-center items-center z-10 bottom-0 hover:opacity-100">
+                <h4>selet your device</h4>
+              </div>
+            </div>
+
+            <div class="w-full flex-grow flex p-1 justify-between" style="flex: 0 0 10%">
+              <h4>judgement day</h4>
+              <h5>$12</h5>
+            </div>
+          </div>
+
+          <div class="w-72 ml-8 h-96 flex flex-col">
+            <div class="carddd flex-grow hover:opacity-75 relative" style="flex: 0 0 90%">
+              <img src="./page2 8.webp" alt="" />
+              <div
+                class="upper opacity-0 h-full w-full absolute flex justify-center items-center z-10 bottom-0 hover:opacity-100">
+                <h4>selet your device</h4>
+              </div>
+            </div>
+            <div class="w-full flex-grow flex p-1 justify-between" style="flex: 0 0 10%">
+              <h4>dangerous idea</h4>
+              <h5>$14</h5>
+            </div>
+          </div>
+
+          <div class="w-72 ml-8 h-96 flex flex-col">
+            <div class="carddd w-full flex-grow hover:opacity-75 relative" style="flex: 0 0 90%">
+              <img src="./page2 2.webp" alt="" />
+              <div
+                class="upper opacity-0 h-full w-full absolute flex justify-center items-center z-10 bottom-0 hover:opacity-100">
+                <h4>selet your device</h4>
+              </div>
+            </div>
+            <div class="w-full flex-grow flex p-1 justify-between" style="flex: 0 0 10%">
+              <h4>speceboy</h4>
+              <h5>$12</h5>
+            </div>
+          </div>
+
+          <div class="w-72 ml-8 h-96 flex flex-col">
+            <div class="carddd w-full flex-grow hover:opacity-75 relative" style="flex: 0 0 90%">
+              <img src="./page2 3.webp" alt="" />
+              <div
+                class="upper opacity-0 h-full w-full absolute flex justify-center items-center z-10 bottom-0 hover:opacity-100">
+                <h4>selet your device</h4>
+              </div>
+            </div>
+            <div class="w-full flex-grow flex p-1 justify-between" style="flex: 0 0 10%">
+              <h4>space buddy</h4>
+              <h5>$12</h5>
+            </div>
+          </div>
+
+          <div class="w-72 ml-8 h-96 flex flex-col">
+            <div class="carddd w-full flex-grow hover:opacity-75 relative" style="flex: 0 0 90%">
+              <img src="./page2 4.webp" alt="" />
+              <div
+                class="upper opacity-0 h-full w-full absolute flex justify-center items-center z-10 bottom-0 hover:opacity-100">
+                <h4>selet your device</h4>
+              </div>
+            </div>
+            <div class="w-full flex-grow flex p-1 justify-between" style="flex: 0 0 10%">
+              <h4>concrete rank</h4>
+              <h5>$12</h5>
+            </div>
+          </div>
+
+          <div class="w-72 ml-8 h-96 flex flex-col">
+            <div class="carddd w-full flex-grow hover:opacity-75 relative" style="flex: 0 0 90%">
+              <img src="./page2 5.webp" alt="" />
+              <div
+                class="upper opacity-0 h-full w-full absolute flex justify-center items-center z-10 bottom-0 hover:opacity-100">
+                <h4>selet your device</h4>
+              </div>
+            </div>
+            <div class="w-full flex-grow flex p-1 justify-between" style="flex: 0 0 10%">
+              <h4>chaso</h4>
+              <h5>$12</h5>
+            </div>
+          </div>
+
+          <div class="w-72 ml-8 h-96 flex flex-col">
+            <div class="carddd w-full flex-grow hover:opacity-75 relative" style="flex: 0 0 90%">
+              <img src="./page2 6.webp" alt="" />
+              <div
+                class="upper opacity-0 h-full w-full absolute flex justify-center items-center z-10 bottom-0 hover:opacity-100">
+                <h4>selet your device</h4>
+              </div>
+            </div>
+            <div class="w-full flex-grow flex p-1 justify-between" style="flex: 0 0 10%">
+              <h4>before sunset</h4>
+              <h5>$12</h5>
+            </div>
+          </div>
+
+          <div class="w-72 ml-8 h-96 flex flex-col">
+            <div class="carddd w-full  flex-grow hover:opacity-75 relative" style="flex: 0 0 90%">
+              <img src="./page2 8.webp" alt="" />
+              <div
+                class="upper h-full opacity-0 w-full absolute flex justify-center items-center z-10 bottom-0 hover:opacity-100">
+                <h4>selet your device</h4>
+              </div>
+            </div>
+            <div class="w-full flex-grow flex p-1 justify-between" style="flex: 0 0 10%">
+              <h4>gamerboy</h4>
+              <h5>$12</h5>
+            </div>
+          </div>
+
+          <div class="centPic w-[100vw]">
+             <img class="z-30" src="centerPic.webp" alt=""/>
+
+
+
+            <div class="cardEvent2 w-full flex bg-red-00 justify-between items-center">
+              <div class="carddwn w-72 ml-8 h-96 flex flex-col">
+                <div class="carddd w-full flex-grow hover:opacity-75 relative" style="flex: 0 0 90%">
+                  <img src="mobile1.webp" alt="" />
+                  <div
+                    class="upper h-full w-full absolute flex justify-center items-center z-10 bottom-0 hover:opacity-100">
+                    <h4>selet your device</h4>
+                  </div>
                 </div>
+                <div class="w-full flex-grow flex p-1 justify-between" style="flex: 0 0 10%">
+                  <h4>gamerboy</h4>
+                  <h5>$12</h5>
+                </div>
+              </div>
+
+              <div class="carddwn w-72 ml-8 h-96 flex flex-col">
+                <div class="carddd w-full flex-grow hover:opacity-75 relative" style="flex: 0 0 90%">
+                  <img src="mobile2.webp" alt="" />
+                  <div
+                    class="upper h-full w-full absolute flex justify-center items-center z-10 bottom-0 hover:opacity-100">
+                    <h4>selet your device</h4>
+                  </div>
+                </div>
+                <div class="w-full flex-grow flex p-1 justify-between" style="flex: 0 0 10%">
+                  <h4>gamerboy</h4>
+                  <h5>$12</h5>
+                </div>
+              </div>
+
+              <div class="carddwn w-72 ml-8 h-96 flex flex-col">
+                <div class="carddd w-full flex-grow hover:opacity-75 relative" style="flex: 0 0 90%">
+                  <img src="mobile3.webp" alt="" />
+                  <div
+                    class="upper h-full w-full absolute flex justify-center items-center z-10 bottom-0 hover:opacity-100">
+                    <h4>selet your device</h4>
+                  </div>
+                </div>
+                <div class="w-full flex-grow flex p-1 justify-between" style="flex: 0 0 10%">
+                  <h4>gamerboy</h4>
+                  <h5>$12</h5>
+                </div>
+              </div>
+
+              <div class="carddwn w-72 ml-8 h-96 flex flex-col">
+                <div class="carddd w-full flex-grow hover:opacity-75 relative" style="flex: 0 0 90%">
+                  <img src="mobile4.webp" alt="" />
+                  <div
+                    class="upper h-full w-full absolute flex justify-center items-center z-10 bottom-0 hover:opacity-100">
+                    <h4>selet your device</h4>
+                  </div>
+                </div>
+                <div class="w-full flex-grow flex p-1 justify-between" style="flex: 0 0 10%">
+                  <h4>gamerboy</h4>
+                  <h5>$12</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container mx-auto py-8">
+            <div class="game flex justify-between items-center py-12  px-8">
+              <div class="text-center">
+                <div class="mb-4 flex items-center justify-center p-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none" stroke="#202020"
+                    stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round">
+                    <path d="M62 15.3L32 2 2 15.3v33.4L32 62l30-13.3V15.3z"></path>
+                    <path d="M2 15.3l30 13.3 30-13.3M18.4 8l30 13.3M32 28.6V62" stroke-linecap="round"></path>
+                    <path d="M54 31.6l-12 5.3v11.3l12-5.3V31.6z"></path>
+                  </svg>
+                </div>
+
                 <h2 class="font-semibold mb-2">Same Day Dispatch</h2>
-                <p>All orders placed before 12pm Monday to Friday are dispatched same day.</p>
-            </div>
-            <div class="text-center">
-                <div class="mb-4">
-                    <img src="https://via.placeholder.com/40" alt="Icon 2" class="mx-auto">
+                <p class="font-medium">
+                  All orders placed before 12pm Monday to Friday are dispatched
+                  same day.
+                </p>
+              </div>
+
+              <div class="text-center">
+                <div class="mb-4 flex items-center justify-center">
+                  <img src="https://via.placeholder.com/40" alt="Icon 2" class="mx-auto" />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none" stroke="#202020"
+                    stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round">
+                    <g stroke-linecap="round">
+                      <path
+                        d="M17 15h26c2.3 0 2.1 1.6 1.7 3.1S41 33 41 33h10.1l4-2 3.9 2v8c0 1.3-.5 2-2 2h-8M9 43h6.6m9.4 0h14.6">
+                      </path>
+                      <path d="M43.6 23H49l6.1 8M31 23H9m18 8H5"></path>
+                    </g>
+                    <path
+                      d="M24.8 44a6.9 6.9 0 0 1-6.2 5c-2.7 0-4.2-2.2-3.4-5a6.9 6.9 0 0 1 6.2-5c2.6 0 4.2 2.2 3.4 5zm24 0a6.9 6.9 0 0 1-6.2 5c-2.7 0-4.2-2.2-3.4-5a6.9 6.9 0 0 1 6.2-5c2.6 0 4.2 2.2 3.4 5z">
+                    </path>
+                  </svg>
                 </div>
+
                 <h2 class="font-semibold mb-2">Free & Fast Delivery</h2>
                 <p>Orders to metro cities reach in 2-3 working days.</p>
-            </div>
-            <div class="text-center">
-                <div class="mb-4">
-                    <img src="https://via.placeholder.com/40" alt="Icon 3" class="mx-auto">
+              </div>
+
+              <div class="text-center">
+                <div class="mb-4 flex items-center justify-center">
+                  <img src="https://via.placeholder.com/40" alt="Icon 3" class="mx-auto" />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none" stroke="#202020"
+                    stroke-width="2" stroke-linejoin="round">
+                    <path stroke-linecap="round" stroke-miterlimit="10"
+                      d="M54 6v10H44M32 59a27 27 0 1 1 21.751-43m-8.766 39.678A26.819 26.819 0 0 1 38 58.331M53.75 48a27.159 27.159 0 0 1-4.711 4.945m8.75-12.932a26.821 26.821 0 0 1-1.58 3.952">
+                    </path>
+                    <circle cx="32" cy="32" r="3"></circle>
+                    <path stroke-linecap="round" stroke-miterlimit="10" d="M33.96 34.26L44 42M32 12v17"></path>
+                  </svg>
                 </div>
                 <h2 class="font-semibold mb-2">Cancellation Policy</h2>
-                <p>Easy cancellation from the dashboard within 12 hours of placing the order.</p>
+                <p>
+                  Easy cancellation from the dashboard within 12 hours of placing
+                  the order.
+                </p>
+              </div>
             </div>
+          </div>
+          <footer class="foot1  ">
+            <div class="footerr bg-white">
+              <div>
+                <a class="foot2" href="">Facebook<i class="fa-brands fa-facebook" id="my"></i></a>
+                <a class="foot2" href="">Linkdin<i class="fa-brands fa-linkedin" id="my1"></i></a>
+                <a class="foot2" href="">Instragram<i class="fa-brands fa-instagram" id="my2"></i></a>
+                <a class="foot2" href="">Telegram<i class="fa-brands fa-telegram" id="my3"></i></a>
+                <a class="foot2" href="">Twitter<i class="fa-brands fa-twitter" id="my4"></i></a>
+              </div>
+            </div>
+            <div class="hiii text-white w-full py-4 px-8  flex ">
+              <div class="w-80">
+                <h3 class="font-semibold mb-2">Vision</h3>
+                <p>Creativity, Expression, & Exploration</p>
+              </div>
+
+              <div class="w-80">
+                <h3 class="font-semibold mb-2">Pages</h3>
+                <ul>
+                  <li>About Us</li>
+                  <li>Contact us</li>
+                  <li>Terms and condition</li>
+                  <li>Privacy policy</li>
+                  <li>Refunds/Cancellations/Shipping Policy</li>
+                  <li>FAQ</li>
+                </ul>
+              </div>
+
+              <div class="w-80">
+                <h3 class="font-semibold mb-2">My Accounts</h3>
+                <ul>
+                  <li>Login</li>
+                  <li>Register</li>
+                  <li>Track Order</li>
+                </ul>
+              </div>
+
+              <div class="w-80">
+                <h3 class="font-semibold mb-2">Follow us</h3>
+                <ul>
+                  <li>Twitter</li>
+                  <li>Facebook</li>
+                  <li>YouTube</li>
+                  <li>Instagram</li>
+                </ul>
+              </div>
+            </div>
+          </footer>
+          <hr />
+          <footer class="f1">
+            <div class="div1">
+              <i class="fa-solid fa-cart-plus"></i>Become a Seller
+            </div>
+            <div class="div1">
+              <i class="fa-solid fa-rectangle-ad"></i>Advertise
+            </div>
+            <div class="div1"><i class="fa-solid fa-gift"></i>Gift Card</div>
+            <div class="div1">
+              <i class="fa-solid fa-handshake-angle"></i>Help Center
+            </div>
+            <div class="div1">
+              <i class="fa-regular fa-copyright"></i>2004-2023
+              <a href="">technology.com</a>
+            </div>
+
+            <div class="div1">
+              <i class="fa-brands fa-google"></i>
+            </div>
+          </footer>
         </div>
-    </div>
+      </div>
 
 
 
+      <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <img class="w-full h-screen"
-        src="https://www.layers.shop/cdn/shop/files/Desktop_Banner_Futuristic_Design.png?v=1717589031&width=1080"
-        alt="">
-    <div class="bg-gray-900 text-white">
-        <div class="container mx-auto py-8">
-            <div class="flex justify-between items-center py-12">
-                <div class="text-center">
-                    <div class="mb-4">
-                        <img src="https://via.placeholder.com/40" alt="Icon 1" class="mx-auto">
-                    </div>
-                    <h2 class="font-semibold mb-2">Same Day Dispatch</h2>
-                    <p>All orders placed before 12pm Monday to Friday are dispatched same day.</p>
-                </div>
-                <div class="text-center">
-                    <div class="mb-4">
-                        <img src="https://via.placeholder.com/40" alt="Icon 2" class="mx-auto">
-                    </div>
-                    <h2 class="font-semibold mb-2">Free & Fast Delivery</h2>
-                    <p>Orders to metro cities reach in 2-3 working days.</p>
-                </div>
-                <div class="text-center">
-                    <div class="mb-4">
-                        <img src="https://via.placeholder.com/40" alt="Icon 3" class="mx-auto">
-                    </div>
-                    <h2 class="font-semibold mb-2">Cancellation Policy</h2>
-                    <p>Easy cancellation from the dashboard within 12 hours of placing the order.</p>
-                </div>
-            </div>
-            <div class="bg-gray-800 py-12">
-                <div class="flex justify-between mb-8">
-                    <div>
-                        <h3 class="font-semibold mb-2">Vision</h3>
-                        <p>Creativity, Expression, & Exploration</p>
-                    </div>
-                    <div>
-                        <h3 class="font-semibold mb-2">Pages</h3>
-                        <ul>
-                            <li>About Us</li>
-                            <li>Contact us</li>
-                            <li>Terms and condition</li>
-                            <li>Privacy policy</li>
-                            <li>Refunds/Cancellations/Shipping Policy</li>
-                            <li>FAQ</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="font-semibold mb-2">My Accounts</h3>
-                        <ul>
-                            <li>Login</li>
-                            <li>Register</li>
-                            <li>Track Order</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="font-semibold mb-2">Follow us</h3>
-                        <ul>
-                            <li>Twitter</li>
-                            <li>Facebook</li>
-                            <li>YouTube</li>
-                            <li>Instagram</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script src="script.js"></script>
+      <script type="text/javascript" src="Shery.js"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+
+      <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+
+      <script src="script.js"></script>
 </body>
 
 </html>
